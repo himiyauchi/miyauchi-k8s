@@ -1,2 +1,2 @@
-# miyauchi-k8s
-k8s-test
+# miyauchi-k8s-github
+argocdからgithubのmanifestをデプロイ
