@@ -1,2 +1,3 @@
 # miyauchi-k8s-github
-argocdからgithubのmanifestをデプロイ
+アプリケーション用リポジトリ
+このリポジトリからイメージをビルドする
