@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-5 mx-auto">
+
+            <!-- card -->
+            <div class="card shadow mt-5">
+                <div class="card-body">
+
+                    <!-- logo -->
+                    <div class="logo text-center">
+                        <i class="fa fa-calculator"></i>
+                        CALC
+                    </div>
+
+                    <!-- form -->
+                    <form id="calc" action="calc" method="POST">
+                        <div class="row mt-3">
+
+                            <!-- arg1 -->
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="text" pattern="\d*" id="arg1" name="arg1" class="form-control"
+                                        placeholder="arg1" required>
+                                    <label for="arg1">arg1</label>
+                                </div>
+                            </div>
+
+                            <!-- operator -->
+                            <div class="col">
+                                <select name="operator" class="form-select h-100">
+                                    <option value="1">+</option>
+                                    <option value="2">-</option>
+                                    <option value="3">*</option>
+                                    <option value="4">/</option>
+                                </select>
+                            </div>
+
+                            <!-- arg2 -->
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="text" pattern="\d*" id="arg2" name="arg2" class="form-control"
+                                        placeholder="arg2" required>
+                                    <label for="arg2">arg2</label>
+                                </div>
+                            </div>
+
+                            <!-- submit -->
+                            <div class="col">
+                                <input type="submit" class="btn btn-primary w-100 h-100" value="Calc">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
